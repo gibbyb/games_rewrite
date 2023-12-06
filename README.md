@@ -1,3 +1,3 @@
-# games_rewrite
+# Game School JS Rewrite
 
-Recreating Gaming School Access database & forms to MySQL & Javascript
+## Repository for migrating Gaming School's Access Database & Forms to MySQL & Javascript
