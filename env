@@ -1,6 +1,7 @@
 # Fill in all values & change name from "env" to ".env"
 
-MYSQL_HOST=
-MYSQL_USER=
-MYSQL_PASSWORD=
-MYSQL_DATABASE=
+MYSQL_HOST=''
+MYSQL_USER=''
+MYSQL_PASSWORD=''
+MYSQL_DATABASE=''
+API_KEY=''
