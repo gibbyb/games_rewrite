@@ -36,8 +36,8 @@ const db_1 = __importDefault(require("./db"));
 const path = __importStar(require("path"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const app = (0, express_1.default)();
-const port = 3000;
 dotenv_1.default.config();
+const port = parseInt(process.env.NODE_PORT || '3000', 10);
 const API_KEY = process.env.API_KEY;
 // Check API key Function
 const checkAPIKey = (req, res, next) => {

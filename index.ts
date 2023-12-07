@@ -10,8 +10,8 @@ import * as path from 'path';
 import dotenv from 'dotenv';
 import { FieldPacket } from 'mysql2';
 const app = express();
-const port: number = 3000;
 dotenv.config();
+const port: number = parseInt(process.env.NODE_PORT || '3000', 10);
 const API_KEY = process.env.API_KEY;
 
 // Check API key Function
@@ -30,7 +30,6 @@ const errorHandler = (err: Error, req: Request, res: Response, next: NextFunctio
 
 app.use(express.json());
 app.use('/api', checkAPIKey);
-
 // Path to server static files
 app.use(express.static(path.join(__dirname, 'client/build')));
 

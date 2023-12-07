@@ -1,5 +1,6 @@
 # Fill in all values & change name from "env" to ".env"
 
+NODE_PORT='3001'
 MYSQL_HOST=''
 MYSQL_USER=''
 MYSQL_PASSWORD=''
