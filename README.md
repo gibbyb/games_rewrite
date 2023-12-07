@@ -14,7 +14,7 @@ This will install the node modules you will need for the project for both Node a
 
 2. Duplicate the env files found in the project's root directory & client directory and name the new ones ".env". Fill out the environment variables in your new .env files. If you add any environment variables while developing, try to add them to the env files, but with an empty string, so that it is clear what environment variables must be filled out to host the project. Also remember to make the API Keys the same in your node and react .env files so that you can create and test APIs.
 
-3. From both the project root directory and the client directory, run the command:
+3. From the project root directory, run the command:
 
 ```bash
 npm run build
