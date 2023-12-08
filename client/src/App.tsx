@@ -1,18 +1,41 @@
 import React from 'react';
-import logo from './crescent_logo.png';
+import {
+    createBrowserRouter, createRoutesFromElements, 
+    Route, Link, Outlet, RouterProvider
+} from 'react-router-dom';
+import Home from './Components/Home';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Crescent School of Gaming & Bartending
-        </p>
-      </header>
-    </div>
-  );
+export function App(props: any) { // Specify the type for props if needed
+
+    const router = createBrowserRouter(
+        createRoutesFromElements(
+            <Route path="/" element={<Root />}>
+                <Route index element={<Home />} />
+            </Route>
+        )
+    );
+
+    return (
+        <div className="App">
+            <RouterProvider router={router} />
+        </div>
+    );
 }
 
-export default App;
+// This will be our Navigation Bar Component
+const Root = () => {
+    return (
+        <>
+            <div className="navbar"> 
+                <Link className="navbar-link" to="/">Login</Link> 
+                {/* Add more links as needed */}
+            </div>
+            <div>
+                <Outlet />
+            </div>
+        </>
+    );
+}
+
+
