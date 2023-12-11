@@ -4,6 +4,7 @@ import {
     Route, Link, Outlet, RouterProvider
 } from 'react-router-dom';
 import Home from './Components/Home';
+import LightDarkToggle from './Components/LightDarkToggle';
 import './App.css';
 
 export function App(props: any) { // Specify the type for props if needed
@@ -28,8 +29,11 @@ const Root = () => {
     return (
         <>
             <div className="navbar"> 
-                <Link className="navbar-link" to="/">Login</Link> 
-                {/* Add more links as needed */}
+                <div className="navbar-elements">
+                    <Link className="navbar-link" to="/">Home</Link>
+                    {/* Add toggle here */}
+                    <LightDarkToggle />
+                </div>
             </div>
             <div>
                 <Outlet />

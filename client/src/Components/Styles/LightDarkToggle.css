@@ -1,0 +1,7 @@
+.Ellipse3 {
+    transition: transform 0.3s ease-in-out; /* Animation for both directions */
+}
+.move-right {
+    transform: translateX(370px); /* Moves the element 370 pixels to the right */
+}
+

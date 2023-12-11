@@ -60,3 +60,9 @@
     color: black;
 }
 
+.lightdarktoggle {
+    z-index: 10; /* Adjust the value as needed */
+    position: relative; /* or absolute, depending on your layout */
+    width: 100px;
+}
+
