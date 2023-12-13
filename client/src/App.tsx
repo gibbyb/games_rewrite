@@ -18,7 +18,7 @@ export function App(props: any) { // Specify the type for props if needed
     );
 
     return (
-        <div className="App">
+        <div className="App text-center">
             <RouterProvider router={router} />
         </div>
     );
@@ -28,9 +28,10 @@ export function App(props: any) { // Specify the type for props if needed
 const Root = () => {
     return (
         <>
-            <div className="navbar"> 
-                <div className="navbar-elements">
-                    <Link className="navbar-link" to="/">Home</Link>
+            <div className="navbar bg-stone-950 overflow-hidden"> 
+                <div className="navbar-elements text-lg">
+                    <Link className="navbar-link float-left block text-slate-200 text-center py-3 px-5 no-underline hover:bg-slate-300 hover:text-slate-900" to="/">Login</Link>
+                    <Link className="navbar-link float-left block text-slate-200 text-center py-3 px-4 no-underline hover:bg-slate-300 hover:text-slate-900" to="/">Test</Link>
                     {/* Add toggle here */}
                     <LightDarkToggle />
                 </div>

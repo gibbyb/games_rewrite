@@ -1,7 +1,19 @@
 .Ellipse3 {
     transition: transform 0.3s ease-in-out; /* Animation for both directions */
 }
+
 .move-right {
     transform: translateX(370px); /* Moves the element 370 pixels to the right */
 }
 
+.group-fade-in {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  
+  .group-invisible {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
