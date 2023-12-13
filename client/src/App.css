@@ -16,3 +16,8 @@
 .App-header {
   font-size: calc(10px + 2vmin);
 }
+
+/* Show the dropdown menu when hovering over the list item */
+li:hover > .sub-menu {
+    display: block;
+}
