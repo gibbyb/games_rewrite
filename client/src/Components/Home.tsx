@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../Img/crescent_logo.png';
+import "./Styles/Home.css";
 
 function Home() {
     return (
