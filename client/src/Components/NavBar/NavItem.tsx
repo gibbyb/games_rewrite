@@ -18,7 +18,7 @@ interface NavItemProps {
 
 const NavItem: React.FC<NavItemProps> = ({ title, link, submenu }) => {
     return (
-        <li className="relative group">
+        <li className="relative group text-xl">
             <Link className="navbar-link text-white" to={link}>{title}</Link>
             {submenu && <Submenu items={submenu} />}
         </li>

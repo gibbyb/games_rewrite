@@ -9,15 +9,23 @@ interface SubmenuProps {
 
 const Submenu: React.FC<SubmenuProps> = ({ items }) => {
     return (
-        <ul className="sub-menu absolute hidden border-slate-200 rounded bg-slate-300 group-hover:block shadow-md z-10">
+        <ul className="sub-menu absolute hidden rounded 
+            bg-stone-950 group-hover:block shadow-md">
             {items.map(item => (
-                <li key={item.name} className={`relative hover:bg-gray-100 ${item.submenu ? 'group' : ''}`}>
-                    <a href={item.href} className="block px-4 py-2 text-sm text-gray-700">{item.name}</a>
+                <li key={item.name} className={`relative hover:bg-gray-700 
+                    ${item.submenu ? 'group' : ''}`}>
+                    <a href={item.href} className="block px-4 py-2 text-lg 
+                        text-gray-100">{item.name}
+                    </a>
                     {item.submenu && (
-                        <ul className="sub-sub-menu absolute hidden left-full top-0 border-slate-200 rounded bg-slate-300 shadow-md z-10">
+                        <ul className="sub-sub-menu absolute hidden left-full 
+                            top-0 rounded bg-stone-950 shadow-md">
                             {item.submenu.map(subItem => (
-                                <li key={subItem.name} className="relative hover:bg-gray-100">
-                                    <a href={subItem.href} className="block px-4 py-2 text-sm text-gray-700">{subItem.name}</a>
+                                <li key={subItem.name} className="relative 
+                                    hover:bg-gray-700">
+                                    <a href={subItem.href} className="block px-4 py-2 
+                                        text-lg text-gray-100">{subItem.name}
+                                    </a>
                                 </li>
                             ))}
                         </ul>
