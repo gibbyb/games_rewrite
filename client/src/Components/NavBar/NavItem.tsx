@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import Submenu from './Submenu';
 
 // Define a type for the submenu items
-interface SubmenuItem {
+export interface SubmenuItem {
     name: string;
     href: string;
+    submenu?: SubmenuItem[];
 }
 
 // Define a type for the NavItem props

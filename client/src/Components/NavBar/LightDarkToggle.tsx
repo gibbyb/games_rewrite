@@ -9,7 +9,7 @@ function LightDarkToggle() {
     };
 
     return (
-        <div className="LightDarkToggle scale-10 float-right" onClick={handleClick}>
+        <div className="LightDarkToggle scale-10 float-right justify-center h-96" onClick={handleClick}>
           <div className="Frame1 w-[150px] h-[20.0px] relative bg-white bg-opacity-0">
             <div className="Group5 w-[693px] h-[300px] left-[27px] top-[50px] absolute">
               <div className={`Rectangle1 w-[400px] h-[300px] left-[143px] top-0 absolute

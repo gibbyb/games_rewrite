@@ -3,14 +3,14 @@ import {
     createBrowserRouter, createRoutesFromElements, 
     Route, Link, Outlet, RouterProvider
 } from 'react-router-dom';
-import Home from './Components/Home';
-import Navbar from './Components/Navbar/Navbar'; // Import Navbar component
+import Login from './Components/Login';
+import NavBar from './Components/NavBar/NavBar';
 
 export function App() {
     const router = createBrowserRouter(
         createRoutesFromElements(
             <Route path="/" element={<Root />}>
-                <Route index element={<Home />} />
+                <Route index element={<Login />} />
             </Route>
         )
     );
@@ -25,7 +25,7 @@ export function App() {
 const Root = () => {
     return (
         <>
-            <Navbar />
+            <NavBar />
             <div>
                 <Outlet />
             </div>
